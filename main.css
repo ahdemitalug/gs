@@ -3,6 +3,7 @@ html {
     font-family: 'Inconsolata', monospace;
 }
 
+/* to remove any excess default padding or margin */
 body {
     padding: 0;
     margin: 0;
@@ -16,18 +17,21 @@ body {
 
 .main_wrapper {
     height: 100vh;
-    display: flex;
+    display: flex; 
 }
+
+
 
 .sidebar {
     width: 20%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: teal;
 }
 
 .main_area {
     width: 80%;
     height: 100%;
+    display: flex;
 }
 
 .sidebar_header {
@@ -35,6 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: teal;
 }
 
 .siderbar_header_content {
@@ -62,6 +67,10 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    width: 80%;
+    background-color: pink;
+    z-index: 0;
 }
 
 .main_area_header ul {
@@ -72,4 +81,37 @@ body {
 .main_area_header li {
     padding: 0px 30px;
     font-size: 20px;
+}
+
+.profile_wrapper{
+    width: 60%;
+    height: 100%;
+    background-image: url('/img/profile.jpg');
+    background-position: 0% 0%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    z-index: 10;
+    clip-path: polygon(0% 0%, 65% 0%, 100% 50%, 65% 100%, 0% 100%);
+}
+
+.main_area_content{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main_area_content_heading{
+
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.main_area_content_subheading{
+
+    font-size: 30px;
 }
