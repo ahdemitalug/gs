@@ -7,14 +7,12 @@ function increment(){
     setCounterValue('Increment');
 }
 
-incButton.addEventListener('click',increment);
-
-
 function decrement(){
     console.log('Decrement');
     setCounterValue('Decrement');
 }
 
+incButton.addEventListener('click',increment);
 decButton.addEventListener('click',decrement);
 
 function setCounterValue(type)
