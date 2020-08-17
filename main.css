@@ -1,0 +1,37 @@
+.container{
+
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_todo{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.todo_form{
+    height: 100px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#Add_Todo{
+
+    width: max-content;
+    align-self: center;
+}
+
+.show_todo{
+
+    width: 40%;
+    min-height: 100px;
+    background-color: #ccc;
+    padding: 30px;
+}
